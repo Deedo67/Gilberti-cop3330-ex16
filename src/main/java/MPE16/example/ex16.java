@@ -15,5 +15,23 @@ public class ex16 {
         Scanner in = new Scanner(System.in);
 
         //input
+        System.out.print("What is your age? ");
+        String strage = in.nextLine();
+
+        //string convert
+        int age = Integer.parseInt(strage);
+
+        //known variable
+        int legal = 16;
+
+        //output and check
+        if(age >= 16)
+        {
+            System.out.print("You are old enough to legally drive.");
+        }
+        else
+        {
+            System.out.print("You are not old enough to legally drive.");
+        }
     }
 }
